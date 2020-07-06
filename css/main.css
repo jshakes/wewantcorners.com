@@ -432,3 +432,17 @@ a:hover {
   background: var(--color-typography);
   color: var(--color-background);
 }
+
+.footer {
+  border-top: 0.25em solid var(--color-typography);
+  margin-top: 4em;
+}
+
+.footer__quote {
+  margin: 2em 0 0;
+  font-style: italic;
+}
+
+.footer__source {
+  margin: 0.5em 0 2em;
+}
