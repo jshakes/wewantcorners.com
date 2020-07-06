@@ -273,6 +273,10 @@ textarea {
   --font-display: 'Cousine', monospace;
 }
 
+*:focus {
+  outline: 0.25em solid var(--color-typography);
+}
+
 body {
   color: var(--color-typography);
   background: var(--color-background);
