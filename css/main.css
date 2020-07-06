@@ -290,6 +290,7 @@ body {
   font-family: var(--font-display);
   font-weight: 700;
   font-style: italic;
+  position: relative;
 }
 
 .header__title {
@@ -317,6 +318,12 @@ body {
 
 .header__strap {
   font-size: 1.25em;
+}
+
+.header__github {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .drake {
@@ -382,4 +389,27 @@ body {
 .description {
   line-height: 1.666666;
   margin: 4em 0;
+}
+
+.faqs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.faqs__item {
+  margin-bottom: 2em;
+}
+
+.faqs__question {
+  position: relative;
+}
+
+.faqs__question summary {
+  cursor: pointer;
+  font-size: 1.25em;
+}
+
+.faqs__question summary:hover {
+  text-decoration: underline;
 }
