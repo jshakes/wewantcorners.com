@@ -315,8 +315,8 @@ body {
   margin-right: 0.2em;
 }
 
-.intro {
-  margin-bottom: 4em;
+.header__strap {
+  font-size: 1.25em;
 }
 
 .drake {
@@ -329,6 +329,7 @@ body {
 
 .drake img {
   width: 33.333333%;
+  display: block;
 }
 
 .browsers {
@@ -360,7 +361,6 @@ body {
   font-style: italic;
   line-height: 1;
   justify-content: center;
-  position: relative;
 }
 
 .browsers__cta:hover {
@@ -377,4 +377,9 @@ body {
   height: auto;
   margin-right: 1em;
   display: block;
+}
+
+.description {
+  line-height: 1.666666;
+  margin: 4em 0;
 }
