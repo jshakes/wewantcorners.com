@@ -69,49 +69,51 @@
         <li class="faqs__item">
           <details class="faqs__question">
             <summary>How does it work?</summary>
-            <p>Magic</p>
+            <p>The extension resets the border-radius CSS rule to 0 using a wildcard selector, like this:</p>
+            <pre class="code">* { border-radius: 0 !important }</pre>
+            <p>That's it. That's the whole extension.</p>
           </details>
         </li>
         <li class="faqs__item">
           <details class="faqs__question">
             <summary>Can I limit WWC to certain sites?</summary>
-            <p>Yes</p>
+            <p>Yes. You can choose only to run WWC on sites you choose using your browser preferences, or you can run it all the time and exclude certain sites by clicking the WWC item your browser toolbar.</p>
           </details>
         </li>
         <li class="faqs__item">
           <details class="faqs__question">
-            <summary>Can’t I just do this with Stylebot or something similar?</summary>
-            <p>Yes</p>
+            <summary>Can’t I just do this with Stylebot or Stylish?</summary>
+            <p>Sure, but WWC is more a badge of honor than anything. Plus, it's super lightweight and won't make you sick, kill you, or <a href="https://robertheaton.com/2018/07/02/stylish-browser-extension-steals-your-internet-history/">spy on your browsing history</a>.</p>
           </details>
         </li>
         <li class="faqs__item">
           <details class="faqs__question">
             <summary>Is WWC open source?</summary>
-            <p>Yes and here's the Github URL</p>
+            <p>Yes, you can find it <a href="https://github.com/jshakes/we-want-corners">on Github</a>.</p>
           </details>
         </li>
         <li class="faqs__item">
           <details class="faqs__question">
             <summary>Why am I still seeing some rounded corners with the extension installed?</summary>
-            <p>It's not perfect</p>
+            <p>WWC is pretty basic. It can't square off things like images or SVG's, and it can be overruled by a more specific CSS selector. If you have an improvement, please open a <a href="https://github.com/jshakes/we-want-corners/pulls">pull request</a>.</p>
           </details>
         </li>
         <li class="faqs__item">
           <details class="faqs__question">
             <summary>Why are innocent circles being converted squares?</summary>
-            <p>It's not perfect</p>
+            <p>Web developers use the same CSS rule to make circles that they use to round the corners of rectangles. It's not easy to know which one the developer was going for, so circles become squares.</p>
           </details>
         </li>
         <li class="faqs__item">
           <details class="faqs__question">
             <summary>I’ve noticed a bug, what should I do?</summary>
-            <p>Please open an issue on the Github repo issues page</p>
+            <p>Please open an issue on the <a href="https://github.com/jshakes/we-want-corners/issues">Github repo issues page</a>.</p>
           </details>
         </li>
         <li class="faqs__item">
           <details class="faqs__question">
             <summary>Was building this really the best use of your time?</summary>
-            <p>No, please help me</p>
+            <p>No, please help me.</p>
           </details>
         </li>
       </ul>

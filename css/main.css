@@ -417,3 +417,10 @@ body {
 .faqs__question summary:hover {
   text-decoration: underline;
 }
+
+.code {
+  font-family: 'Courier New';
+  padding: 1em;
+  background: var(--color-typography);
+  color: var(--color-background);
+}
