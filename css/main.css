@@ -441,7 +441,7 @@ a:hover {
 }
 
 .footer {
-  border-top: 0.25em solid var(--color-typography);
+  border-top: 0.333333em solid var(--color-typography);
   margin-top: 4em;
   padding-top: 2em;
 }
