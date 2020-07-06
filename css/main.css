@@ -278,23 +278,27 @@ body {
 .heading {
   text-transform: uppercase;
   width: 5em;
-  line-height: 1;
+  line-height: 0.85;
   font-family: 'Cousine', monospace;
   font-weight: 700;
   font-style: italic;
   font-size: 4em;
   margin: 0 0 1em;
   letter-spacing: -0.03em;
-  word-spacing: -0.25em;
+  word-spacing: -0.3em;
 }
 
 .heading::before {
-  content: '■';
-  color: #16d652;
+  content: '';
+  border: 0.333333em solid #16d652;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  background-color: black;
   line-height: 0;
   display: inline-block;
-  font-size: 1.25em;
-  margin-right: 0.25em;
+  width: 0;
+  height: 0;
+  margin-right: 0.2em;
 }
 
 .drake {
