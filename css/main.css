@@ -285,20 +285,31 @@ body {
   max-width: 600px;
 }
 
-.heading {
-  text-transform: uppercase;
-  width: 5em;
-  line-height: 0.85;
+.header {
+  display: flex;
+  align-items: center;
   font-family: var(--font-display);
   font-weight: 700;
   font-style: italic;
-  font-size: 4em;
-  margin: 0.1em 0 0 0.1em;
-  letter-spacing: -0.03em;
-  word-spacing: -0.3em;
+  margin: 0.5em;
 }
 
-.heading::before {
+.header__title {
+  text-transform: uppercase;
+  width: 5em;
+  line-height: 0.85;
+  font-size: 4em;
+  letter-spacing: -0.03em;
+  word-spacing: -0.3em;
+  margin: 0;
+}
+
+.header__strap {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.header__title::before {
   content: '';
   border: 0.333333em solid var(--color-accent);
   border-right-color: transparent;
