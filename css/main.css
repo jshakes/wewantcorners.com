@@ -280,18 +280,16 @@ body {
   font-size: 20px;
 }
 
+.header,
 .content {
   margin: 4em auto;
-  max-width: 600px;
+  max-width: 30em;
 }
 
 .header {
-  display: flex;
-  align-items: center;
   font-family: var(--font-display);
   font-weight: 700;
   font-style: italic;
-  margin: 0.5em;
 }
 
 .header__title {
@@ -302,11 +300,6 @@ body {
   letter-spacing: -0.03em;
   word-spacing: -0.3em;
   margin: 0;
-}
-
-.header__strap {
-  margin: 0 auto;
-  max-width: 50%;
 }
 
 .header__title::before {
@@ -341,16 +334,22 @@ body {
 .browsers {
   list-style: none;
   padding: 0;
-  margin: 0;
-  font-size: 1.5em;
+  display: flex;
+  margin: 0 -4em 2em;
+  font-size: 1.25em;
+}
+
+.browsers__item {
+  width: 50%;
 }
 
 .browsers__item + .browsers__item {
-  margin-top: 1em;
+  margin-left: 1em;
 }
 
 .browsers__cta {
   display: flex;
+  white-space: nowrap;
   align-items: center;
   padding: 1em;
   background: var(--color-accent);
@@ -359,26 +358,22 @@ body {
   font-family: var(--font-display);
   font-weight: 700;
   font-style: italic;
-  box-shadow: 0.25em 0.25em 0 0 var(--color-typography);
   line-height: 1;
+  justify-content: center;
 }
 
-.browsers__cta::after {
-  content: '+';
+.browsers__cta:hover {
+  box-shadow: 0.25em 0.25em 0 0 var(--color-typography);
 }
 
 .browsers__cta:active {
   box-shadow: none;
-  margin: 0.25em -0.25em 0 0.25em;
+  margin: 0.25em -0.25em -0.25em 0.25em;
 }
 
 .browsers__logo {
-  width: 2em;
+  width: 1.666666em;
   height: auto;
   margin-right: 1em;
   display: block;
-}
-
-.browsers__label {
-  flex-grow: 1;
 }
