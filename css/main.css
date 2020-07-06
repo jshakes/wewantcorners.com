@@ -363,16 +363,6 @@ body {
   position: relative;
 }
 
-.browsers__cta::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: 0.666666em solid var(--color-typography);
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-}
-
 .browsers__cta:hover {
   box-shadow: 0.25em 0.25em 0 0 var(--color-typography);
 }
