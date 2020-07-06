@@ -265,8 +265,18 @@ textarea {
 
 /* We want corners custom styles */
 
+* {
+  --color-background: white;
+  --color-typography: black;
+  --color-accent: #16d652;
+  --font-body: sans-serif;
+  --font-display: 'Cousine', monospace;
+}
+
 body {
-  font-family: sans-serif;
+  color: var(--color-typography);
+  background: var(--color-background);
+  font-family: var(--font-body);
   font-size: 20px;
 }
 
@@ -279,7 +289,7 @@ body {
   text-transform: uppercase;
   width: 5em;
   line-height: 0.85;
-  font-family: 'Cousine', monospace;
+  font-family: var(--font-display);
   font-weight: 700;
   font-style: italic;
   font-size: 4em;
@@ -290,10 +300,10 @@ body {
 
 .heading::before {
   content: '';
-  border: 0.333333em solid #16d652;
+  border: 0.333333em solid var(--color-accent);
   border-right-color: transparent;
   border-bottom-color: transparent;
-  background-color: black;
+  background-color: var(--color-typography);
   line-height: 0;
   display: inline-block;
   width: 0;
@@ -311,4 +321,49 @@ body {
 
 .drake img {
   width: 33.333333%;
+}
+
+.browsers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.browsers__item + .browsers__item {
+  margin-top: 1em;
+}
+
+.browsers__cta {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  background: var(--color-accent);
+  color: var(--color-background);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  box-shadow: 0.25em 0.25em 0 0 var(--color-typography);
+  line-height: 1;
+}
+
+.browsers__cta::after {
+  content: '+';
+}
+
+.browsers__cta:active {
+  box-shadow: none;
+  margin: 0.25em -0.25em 0 0.25em;
+}
+
+.browsers__logo {
+  width: 2em;
+  height: auto;
+  margin-right: 1em;
+  display: block;
+}
+
+.browsers__label {
+  flex-grow: 1;
 }
