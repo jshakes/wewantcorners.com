@@ -360,6 +360,17 @@ body {
   font-style: italic;
   line-height: 1;
   justify-content: center;
+  position: relative;
+}
+
+.browsers__cta::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0.666666em solid var(--color-typography);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .browsers__cta:hover {
