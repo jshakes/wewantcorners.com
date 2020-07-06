@@ -311,6 +311,10 @@ body {
   margin-right: 0.2em;
 }
 
+.intro {
+  margin-bottom: 4em;
+}
+
 .drake {
   display: flex;
   font-size: 3em;
