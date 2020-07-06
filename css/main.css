@@ -274,7 +274,7 @@ textarea {
 }
 
 *:focus {
-  outline: 0.25em solid var(--color-typography);
+  outline: 0.25rem solid var(--color-typography);
 }
 
 body {
